@@ -1,0 +1,10 @@
+#Diese Datei sagt der GIT-Erweiterung welche Dateien des Projekts nicht in GIthub hochgeladen werden sollen.
+.py[cod]
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+#Die beiden sind die Wichtigsten
+.pdm-python
+.venv/
