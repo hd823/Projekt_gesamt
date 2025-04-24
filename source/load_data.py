@@ -1,5 +1,5 @@
 import numpy as np
-from sort import bubble_sort
+from sort import sort_and_invert, invert_array, bubble_sort
 import matplotlib.pyplot as plt
 
 def load_data(file_path):
@@ -15,17 +15,15 @@ def load_data(file_path):
     column_arrays = {column: data_array[column] for column in column_names}
 
     # Print each column
-    #for column, array in column_arrays.items():
-    #    print(f"{column}: {array}")
+    # for column, array in column_arrays.items():
+    #     print(f"{column}: {array}")
 
     return column_arrays
 
 
-
 if __name__ == "__main__":
-    data = load_data('activity.csv')
+    data = load_data('data/activity.csv')
     power_W = data['PowerOriginal']
     print(power_W)
     sorted_power_W = bubble_sort(power_W)
     print(sorted_power_W[::-1])
-  
