@@ -47,7 +47,7 @@ Hier folgen erste Entwürfe eines UI Designs. Das Design ist für die Darstellun
 Die App dient zur Visualisierung von EKG-Daten und wurde als Streamlit-Anwendung für die Sakai-Abgabe 2 entwickelt.
 
 ## Anwendung starten
-In der Powershell 'streamlit run main.py' eingeben.
+In der Powershell 'streamlit run main_hr_app.py' eingeben.
 Nach kurzer Ladezeit öffnet sich automatisch ein Browserfenster unter der URL "http://localhost:8501/" mit der App-Oberfläche. Falls Änderungen am Code vorgenommen werden, müssen diese gespeichert und die Streamlit-Seite im Browser neu geladen werden.
 
 
@@ -70,3 +70,17 @@ Es werden die Gesamtzeiten in den einzelnen Zonen und die durchschnittliche Leis
 Im folgenden Bild ist ein Screenshot der EKG-App zu sehen:
 
 ![](figures\screenshot_app.png)
+
+
+# Leistungskurve 2 - Abgabe 3
+Ziel der Abgabe ist das Schreiben eines Skripts zur Erstellung eines Diagramms der Leistung in W über die gesamte Zeit der Activität.
+Dabei soll die Eingabe aus einer CSV-Datei oder aber auch einer NPY-Datei erfolgen können.
+Danach soll ein klassisches "Power Duration Curve"-Diagramm erstellt werden.
+
+## Verwendung des Skripts main_power_figures.py
+Zur Erstellung der beiden Diagramme muss die Datei main_power_figures.py ausgeführt werden.
+
+### Beispiel Ausgaben
+Aus dem Beispiel-Datensatz "activity.csv" werden folgende Diagramme erstellt:
+
+![](figures\screenshot_leistungskurve2.png)

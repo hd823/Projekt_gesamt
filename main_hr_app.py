@@ -4,7 +4,7 @@ from PIL import Image
 import pandas as pd
 from plotly import express as px
 import plotly.graph_objects as go
-from source.functions_plot import analyse_heart_rate, plot_analysed_hr, calculate_time_per_zone
+from source.functions_hr_plot import analyse_heart_rate, plot_analysed_hr, calculate_time_per_zone
 
 
 # Sicherstellen, dass auch vor der Nutzerauswahl schon ein Wert im SessionState ist
