@@ -42,3 +42,31 @@ __USe Case 1__ Die User Journey für die Diagnostiker:in, wenn sie einen Test au
 ### Design
 
 Hier folgen erste Entwürfe eines UI Designs. Das Design ist für die Darstellung auf einem PC optimiert (Querformat). Keine seperaten Frames.
+
+# EKG App - Streamlit Anwendung
+Die App dient zur Visualisierung von EKG-Daten und wurde als Streamlit-Anwendung für die Sakai-Abgabe 2 entwickelt.
+
+## Anwendung starten
+In der Powershell 'streamlit run main.py' eingeben.
+Nach kurzer Ladezeit öffnet sich automatisch ein Browserfenster unter der URL "http://localhost:8501/" mit der App-Oberfläche. Falls Änderungen am Code vorgenommen werden, müssen diese gespeichert und die Streamlit-Seite im Browser neu geladen werden.
+
+
+## Funktionsweise der EKG APP
+
+### Auswahl der Versuchsperson
+Zu Beginn wird der Name der Versuchsperson ausgewählt. Anschließend erscheint das zugehörige Bild der Person.
+
+### Eingabe der maximalen Herzfrequenz
+Diese kann manuell eingegeben oder über Plus-/Minus-Buttons angepasst werden.
+Dadurch änderen sich die Einfärbungen der Zonene unter dem Graphen der Herzfrequenz und die Zeit in einzelenen Zonen sowie die Durchschnittsleistung.
+
+### Darstellung der Daten
+Zum Schluss wird ein Plot angezeigt, der die Herzfrequenz- und Leistungsdaten über die Zeit visualisiert.
+
+### Tabelle mit Durchschnittsleistung und Zeit in Zonen
+Es werden die Gesamtzeiten in den einzelnen Zonen und die durchschnittliche Leistung in diesen in einer Tabelle visualiesiert.
+
+## Sakai Abgabe 2 - EKG APP
+Im folgenden Bild ist ein Screenshot der EKG-App zu sehen:
+
+![](figures\screenshot_app.png)
