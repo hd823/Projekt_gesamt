@@ -47,7 +47,7 @@ Hier folgen erste Entwürfe eines UI Designs. Das Design ist für die Darstellun
 Die App dient zur Visualisierung von EKG-Daten und wurde als Streamlit-Anwendung für die Sakai-Abgabe 2 entwickelt.
 
 ## Anwendung starten
-In der Powershell 'streamlit run main_hr_app.py' eingeben.
+In der Powershell 'streamlit run main_streamlit_app.py' eingeben.
 Nach kurzer Ladezeit öffnet sich automatisch ein Browserfenster unter der URL "http://localhost:8501/" mit der App-Oberfläche. Falls Änderungen am Code vorgenommen werden, müssen diese gespeichert und die Streamlit-Seite im Browser neu geladen werden.
 
 
