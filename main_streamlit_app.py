@@ -1,12 +1,9 @@
 import streamlit as st
 from PIL import Image
-import pandas as pd
-from plotly import express as px
-import plotly.graph_objects as go
-
 from source.functions_hr_plot import analyse_heart_rate, plot_analysed_hr, calculate_time_per_zone
 import source.object_functions_person_data as obj_func_person
 import source.ekg_data as ekgdata
+from person_class import Person
 
 # Sicherstellen, dass auch vor der Nutzerauswahl schon ein Wert im SessionState ist
 if "aktuelle_versuchsperson" not in st.session_state:
@@ -15,8 +12,10 @@ if "aktuelle_versuchsperson" not in st.session_state:
 # Sollen hier die statischen Funktionen der Klasse Person verwendet werden, oder die importierten Funktionen aus dem Modul object_functions_person_data?
 FILE_PATH = "data/person_db.json"
 FILE_PATH_HR = "data/activity.csv"
-user_data = obj_func_person.load_person_data(FILE_PATH)
-name_list = obj_func_person.get_person_list(user_data)
+# user_data = obj_func_person.load_person_data(FILE_PATH)
+# name_list = obj_func_person.get_person_list(user_data)
+user_data = Person.load_person_data(FILE_PATH)
+name_list = Person.get_person_list(user_data)
 
 st.title("EKG App")
 
